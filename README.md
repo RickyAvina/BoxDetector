@@ -1,1 +1,3 @@
 # BoxDetector
+
+Box Detection CNN.
