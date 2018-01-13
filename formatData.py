@@ -8,6 +8,7 @@ cwd = os.getcwd()
 
 def getTrainingImages(p):
     #Parses the filepath to access files
+    print("Starting to get Training images...")
     if p.startswith("/"):
         if p.endswith("/"):
             path = p
@@ -24,7 +25,12 @@ def getTrainingImages(p):
 
     for f in glob.glob(path+"*.jpg"):
         im = Image.open(f)
+        # print("GOT HERE")
         pixelArray = imageToPixels(im)
+        pixelArray = np.array(pixelArray)
+        # print("PSHAPE")
+        # print(pixelArray.shape)
+        # meme = input()
         pixelList.append(pixelArray)
         #print(pixelArray[0][0])
 
@@ -46,12 +52,12 @@ def getLabels():
         f = open(g, 'r').read()
         f = f[:-1]
         f = f.split(' ')
-        f.pop(0)
+        f = f[4:8]
         labelArr.append(f)
 
     labelArr = np.array(labelArr)
     print(labelArr.shape)
-
     return labelArr
 
-getTrainingImages("images")
+#getTrainingImages("images")
+getLabels()
