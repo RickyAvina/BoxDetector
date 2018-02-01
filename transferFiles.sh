@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#echo "Positional Parameters"
-#echo '$1 = ' $1 # IP Address
-
 # $1 = IP Address
 # $2 = optional directory
 
