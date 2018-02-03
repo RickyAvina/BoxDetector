@@ -1,0 +1,13 @@
+crop_prob: 1.0
+shift_x: 32
+shift_y: 32
+scale_prob: 0.0
+scale_min: 0.8
+scale_max: 1.2
+flip_prob: 0.0
+rotation_prob: 0.0
+max_rotate_degree: 5.0
+hue_rotation_prob: 0.0
+hue_rotation: 30.0
+desaturation_prob: 0.0
+desaturation_max: 0.8
